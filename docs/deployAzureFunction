@@ -1,0 +1,34 @@
+To integrate an Azure Function into a subpage of your website hosted on Azure Static Web Apps, you can follow these steps:
+
+### Step 1: Prepare Your Azure Function
+Make sure your Azure Function is ready for deployment. It should be tested and capable of running the intended functionality. Here are some things to check:
+- The function is accessible via HTTP trigger.
+- CORS settings are configured to allow requests from your Static Web Apps' domain.
+
+### Step 2: Deploy Your Azure Function
+Deploy your Azure Function if you haven't done so already. You can deploy it using Azure CLI, GitHub Actions, or directly from Visual Studio or VS Code. Ensure that your function is live and reachable.
+
+### Step 3: Integrate Azure Function with Your Static Web App
+- **Modify Your Frontend**: On the subpage where you want the function to execute, add the necessary HTML/JavaScript to call the Azure Function. Typically, you'd make an asynchronous fetch request to the function's URL.
+  ```javascript
+  async function callMyFunction() {
+      const response = await fetch('https://<your-function-app>.azurewebsites.net/api/yourfunction');
+      const data = await response.json();
+      console.log(data); // Or handle data as needed
+  }
+  ```
+- **Update Your Website**: Deploy these changes to your Static Web App. Use your preferred deployment method, like GitHub Actions or Azure DevOps, to push changes to the site.
+
+### Step 4: Configure CORS (If not done)
+If you haven't configured CORS (Cross-Origin Resource Sharing) to allow your Static Web App to communicate with your Azure Function, you'll need to do so:
+- Go to your Azure Function App settings in the Azure portal.
+- Navigate to the "CORS" section and add your Static Web App's URL to the allowed origins.
+
+### Step 5: Test Integration
+- **Verify Functionality**: Access the subpage on your Static Web App and ensure the function is being called correctly and handling responses as expected.
+- **Debugging**: If issues arise, check the browser's developer console for errors related to network requests, CORS, or the function's execution.
+
+### Step 6: Monitor and Optimize
+Once everything is deployed and running smoothly, monitor the performance of your function and its impact on your web app's performance. Optimize as necessary, perhaps by adjusting function scaling settings or refining the code.
+
+By following these steps, you should be able to seamlessly integrate your Azure Function into a subpage of your Azure-hosted static web app.
