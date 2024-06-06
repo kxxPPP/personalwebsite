@@ -6,16 +6,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Jost:wght@100;300;500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Metrics Dashboard</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body class="broider">
-    <div class="responsive-iframe">
-        <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1osxW&width=100%&height=275" scrolling="no" frameborder="0" style="border: none; overflow:hidden;" allowTransparency="true" loading="lazy"></iframe>
+    <div id="charts-container">
+        <div class="responsive-iframe">
+            <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1osxW&width=100%" scrolling="no" frameborder="0" style="border: none; overflow:hidden;" allowTransparency="true" loading="lazy"></iframe>
+        </div>
+        <div class="responsive-iframe">
+            <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1ozvv&width=100%" scrolling="no" frameborder="0" style="border: none; overflow:hidden;" allowTransparency="true" loading="lazy"></iframe>
+        </div>
+        <div class="responsive-iframe">
+            <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1ozHy&width=100%" scrolling="no" frameborder="0" style="border: none; overflow:hidden;" allowTransparency="true" loading="lazy"></iframe>
+        </div>
+        <div class="responsive-iframe">
+            <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1ozIH&width=100%" scrolling="no" frameborder="0" style="border: none; overflow:hidden;" allowTransparency="true" loading="lazy"></iframe>
+        </div>
+        <!-- Add more chart divs as needed -->
     </div>
-    
-    
+    <script>
+        window.addEventListener('load', () => {
+            const iframes = document.querySelectorAll('.responsive-iframe iframe');
+            iframes.forEach(iframe => {
+                iframe.style.height = "500px"; // Set the height explicitly
+            });
+        });
+        </script>
 </body>
-
 </html>
