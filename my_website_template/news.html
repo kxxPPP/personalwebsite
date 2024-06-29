@@ -32,7 +32,7 @@
                 console.log('Function response:', data);
 
                 // Display the response text in the 'functionResponse' div
-                document.getElementById('functionResponse').innerText = data; // Display plain text directly
+                document.getElementById('functionResponse').innerHTML = data; // Use innerHTML to interpret HTML content
             } catch (error) {
                 console.error('Failed to fetch from Azure Function:', error);
                 document.getElementById('functionResponse').innerText = 'Error fetching response';
