@@ -73,10 +73,28 @@ html, body {
     }
 }
 
+
+#main-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+button {
+    margin-bottom: 20px; /* Adds space below the button */
+}
+
+
+/* container for the news headline text */
 .link-container {
     text-align: left;
     display: inline-block;
-    margin-left: 50px; /* Adjust as needed */
 }
 
 .link {

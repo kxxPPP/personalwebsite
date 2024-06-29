@@ -11,11 +11,15 @@
 </head>
 
 <body class="broider">
-    <!-- Button to call Azure Function -->
-    <button onclick="callAzureFunction()">ZeroHedge</button>
+    <div id="main-container">
+        <div id="button-container">
+            <!-- Button to call Azure Function -->
+            <button onclick="callAzureFunction()">ZeroHedge</button>
+        </div>
 
-    <!-- Element to display the response -->
-    <div id="functionResponse" class="link-container" style="margin-top: 20px; font-size: 16px;"></div>
+        <!-- Element to display the response -->
+        <div id="functionResponse" class="link-container"></div>
+    </div>
 
     <!-- Script to call Azure Function and display the response -->
     <script>
