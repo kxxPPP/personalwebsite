@@ -73,18 +73,22 @@ html, body {
     }
 }
 
+.link-container {
+    text-align: left;
+    display: inline-block;
+    margin-left: 350px; /* Adjust as needed */
+}
 
 .link {
     display: block;
     font-family: 'Comfortaa', cursive;
     color: #36454F;
     text-decoration: none;
-    border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAABjklEQVR4Xu3WSw6CABTFUNj/ojVOiZE2Xh2VKeWRnDw+59ExFTin0xp2BDpegkADHQuMx7WhgY4FxuPa0EDHAuNxbWigY4HxuDb0D6CPyz1CF+jvsAIVgNc00C/w3l0a6A9Ar4/43S16p34QeuEEerdC4nygAoukgRIl0fRRElgkDZQoiSZQgUXSQImSaPqnFFgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmie1XoMVYeukfcAAAAASUVORK5CYII=") 28 /  28px / 0 round;
-    border-width:  4.5px;
-    border-style:  solid;
-    padding: 9px; /* add padding to make room for the border */
-    display: inline-block; /* make the links take up only as much width as their contents */
-    box-sizing: border-box; /* include the padding and border in the link's total width and height */
+    border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAABjklEQVR4Xu3WSw6CABTFUNj/ojVOiZE2Xh2VKeWRnDw+59ExFTin0xp2BDpegkADHQuMx7WhgY4FxuPa0EDHAuNxbWigY4HxuDb0D6CPyz1CF+jvsAIVgNc00C/w3l0a6A9Ar4/43S16p34QeuEEerdC4nygAoukgRIl0fRRElgkDZQoiSZQgUXSQImSaPqnFFgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmie1XoMVYeukfcAAAAASUVORK5CYII=") 28 /  28px / 0 round;
+    border-width: 4.5px;
+    border-style: solid;
+    padding: 9px; /* Add padding to make room for the border */
+    display: inline-block; /* Make the links take up only as much width as their contents */
+    box-sizing: border-box; /* Include the padding and border in the link's total width and height */
     margin-bottom: 5px;
-    
 }

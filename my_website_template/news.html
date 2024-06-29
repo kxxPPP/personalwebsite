@@ -15,7 +15,7 @@
     <button onclick="callAzureFunction()">ZeroHedge</button>
 
     <!-- Element to display the response -->
-    <div id="functionResponse" style="margin-top: 20px; font-size: 16px;"></div>
+    <div id="functionResponse" class="link-container" style="margin-top: 20px; font-size: 16px;"></div>
 
     <!-- Script to call Azure Function and display the response -->
     <script>
@@ -33,6 +33,12 @@
 
                 // Display the response text in the 'functionResponse' div
                 document.getElementById('functionResponse').innerHTML = data; // Use innerHTML to interpret HTML content
+
+                // Apply link class to each link
+                const links = document.querySelectorAll('#functionResponse a');
+                links.forEach(link => {
+                    link.classList.add('link');
+                });
             } catch (error) {
                 console.error('Failed to fetch from Azure Function:', error);
                 document.getElementById('functionResponse').innerText = 'Error fetching response';
