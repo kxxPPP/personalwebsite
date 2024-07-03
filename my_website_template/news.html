@@ -13,20 +13,48 @@
 <body class="broider">
     <div id="main-container">
         <div id="button-container">
-            <!-- Button to call Azure Function -->
-            <button onclick="callAzureFunction()">ZeroHedge</button>
+            <!-- Button to call ZeroHedge Azure Function -->
+            <button onclick="callZeroHedgeFunction()">ZeroHedge</button>
+            <!-- Button to call FT Technology Azure Function -->
+            <button onclick="callFtTechFunction()">FinTimes Tech</button>
         </div>
 
         <!-- Element to display the response -->
         <div id="functionResponse" class="link-container"></div>
     </div>
 
-    <!-- Script to call Azure Function and display the response -->
+    <!-- Script to call Azure Functions and display the response -->
     <script>
-        async function callAzureFunction() {
+        async function callZeroHedgeFunction() {
             try {
                 // Adjust the URL as needed
                 const response = await fetch('https://zhnewsapp.azurewebsites.net/api/fetchNews?code=omDYL0XpmbxXq3Vw9Z_8IIGZPhPgS-CArGpjGpqvGNpYAzFuV4itKA%3D%3D', {
+                    method: 'GET' // or 'POST' depending on your function
+                });
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.text(); // Use response.text() instead of response.json() for plain text
+                console.log('Function response:', data);
+
+                // Display the response text in the 'functionResponse' div
+                document.getElementById('functionResponse').innerHTML = data; // Use innerHTML to interpret HTML content
+
+                // Apply link class to each link
+                const links = document.querySelectorAll('#functionResponse a');
+                links.forEach(link => {
+                    link.classList.add('link');
+                });
+            } catch (error) {
+                console.error('Failed to fetch from Azure Function:', error);
+                document.getElementById('functionResponse').innerText = 'Error fetching response';
+            }
+        }
+
+        async function callFtTechFunction() {
+            try {
+                // Adjust the URL as needed
+                const response = await fetch('https://zhnews.azurewebsites.net/api/fetchNews?code=8dpOce0eHeOq7jHNRJlwiJWC9vqwymuRGHcDlhTKExtdAzFuRjUbiA==', {
                     method: 'GET' // or 'POST' depending on your function
                 });
                 if (!response.ok) {
