@@ -97,7 +97,7 @@ button {
 
 .link {
     display: block;
-    font-family: 'Comfortaa', cursive;
+    font-family: "Open Sans", sans-serif;
     font-size: 20px;
     color: #36454F;
     text-decoration: none;
@@ -112,7 +112,7 @@ button {
 
 #functionResponse a {
     font-size: 20px; /* Ensure consistent font size */
-    font-family: 'Comfortaa', cursive; /* Ensure consistent font family */
+    font-family: "Open Sans", sans-serif; /* Ensure consistent font family */
     color: #36454F; /* Ensure consistent color */
     text-decoration: none;
     border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAABjklEQVR4Xu3WSw6CABTFUNj/ojVOiZE2Xh2VKeWRnDw+59ExFTin0xp2BDpegkADHQuMx7WhgY4FxuPa0EDHAuNxbWigY4HxuDb0D6CPyz1CF+jvsAIVgNc00C/w3l0a6A9Ar4/43S16p34QeuEEerdC4nygAoukgRIl0fRRElgkDZQoiSZQgUXSQImSaPqnFFgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmie1XoMVYeukfcAAAAASUVORK5CYII=") 28 /  28px / 0 round;
