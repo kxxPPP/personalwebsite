@@ -1,4 +1,10 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 /* Existing styles */
 #title-container {
@@ -26,14 +32,7 @@ html, body {
     min-height: calc(100vh - 56px);
     background-color: #FAF9F6;
     font-size: 28px;
-    box-sizing: border-box; /* Ensure all elements use border-box */
-    line-height: 1.5; /* Explicitly set line height */
 }
-
-*, *::before, *::after {
-    box-sizing: inherit; /* Ensure all elements use border-box */
-}
-
 
 #link-container {
     text-align: left;
@@ -134,6 +133,7 @@ button {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    margin: 0;
 }
 
 /* Custom button styles */
