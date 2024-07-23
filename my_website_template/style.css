@@ -25,7 +25,6 @@
 }
 
 
-
 html, body {
     margin: 0;
     padding: 0;
@@ -100,7 +99,6 @@ button {
 }
 
 .link {
-    display: block;
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     color: #36454F;
@@ -114,19 +112,7 @@ button {
     margin-bottom: 5px;
 }
 
-#functionResponse a {
-    font-size: 20px; /* Ensure consistent font size */
-    font-family: "Open Sans", sans-serif; /* Ensure consistent font family */
-    color: #36454F; /* Ensure consistent color */
-    text-decoration: none;
-    border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAABjklEQVR4Xu3WSw6CABTFUNj/ojVOiZE2Xh2VKeWRnDw+59ExFTin0xp2BDpegkADHQuMx7WhgY4FxuPa0EDHAuNxbWigY4HxuDb0D6CPyz1CF+jvsAIVgNc00C/w3l0a6A9Ar4/43S16p34QeuEEerdC4nygAoukgRIl0fRRElgkDZQoiSZQgUXSQImSaPqnFFgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmgCFVgkDZQoiSZQgUXSQImSaAIVWCQNlCiJJlCBRdJAiZJoAhVYJA2UKIkmUIFF0kCJkmie1XoMVYeukfcAAAAASUVORK5CYII=") 28 /  28px / 0 round;
-    border-width: 4.5px;
-    border-style: solid;
-    padding: 9px; /* Add padding to make room for the border */
-    display: inline-block; /* Make the links take up only as much width as their contents */
-    box-sizing: border-box; /* Include the padding and border in the link's total width and height */
-    margin-bottom: 5px;
-}
+
 
 /* Ensure consistent styling for the response container */
 #functionResponse {
