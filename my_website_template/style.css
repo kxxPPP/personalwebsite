@@ -18,11 +18,7 @@
     color: #1E0422;
 }
 
-.broider {
-    border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAABX0lEQVR4Xu3cQW7CMABFQef+h4Z9hCJbGjCE13X7LE8+G6TmGP1QgYPWio1A8QgC3QD6WDzz1x4Svd/M5emBiw/nE79O7xfoGIHi2b4d9HzAzIrxHb86d+nzCivQ6+cZKN57oIFiAZxroYFiAZxroYFiAZxroYFiAZxrobtB8fn/leuLD/y8Aw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcCw0UC+BcrxlaB+2/kdfNLv8i0ECxAM610ECxAM610ECxAM610ECxAM610ECxAM4tL/R8Pn3pM76cyNH7zXx9Rw8UArhB7xdo77HH+9wAym9w5+DMR/7O9+d3CxSTBopBnzS+QFVHWQEwAAAAAElFTkSuQmCC") 28 /  28px / 0 round;
-    border-width:  28px;
-    border-style:  solid;
-}
+
 
 html, body {
     margin: 0;
