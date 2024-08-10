@@ -17,6 +17,7 @@
             <button class="button-54" role="button" onclick="callFtTechFunction()">FinTimes Tech</button>
             <button class="button-54" role="button" onclick="callFtWorldFunction()">FinTimes World</button>
             <button class="button-54" role="button" onclick="callchrisbFunction()">Morning Brief</button>
+            <button class="button-54" role="button" onclick="callAntiWarFunction()">Anti War</button>
         </div>
 
         <!-- Element to display the response -->
@@ -110,8 +111,30 @@
             } catch (error) {
                 console.error('Failed to fetch from Azure Function:', error);
                 document.getElementById('functionResponse').innerText = 'Error fetching response';
-            }
+            }   
         } 
+
+        async function callAntiWarFunction() {
+            try {
+                const response = await fetch('https://antiwarscraper.azurewebsites.net/api/fetchNews?', {
+                    method: 'GET'
+                });
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.text();
+                console.log('Function response:', data);
+
+                document.getElementById('functionResponse').innerHTML = data;
+                const links = document.querySelectorAll('#functionResponse a');
+                links.forEach(link => {
+                    link.classList.add('link');
+                });
+            } catch (error) {
+                console.error('Failed to fetch from Azure Function:', error);
+                document.getElementById('functionResponse').innerText = 'Error fetching response';
+            }
+        }
     </script>
 </body>
 </html>
